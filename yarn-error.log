@@ -1,0 +1,33 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add react react-dom next
+
+PATH: 
+  /home/mo/miniconda3/bin:/home/mo/bin:/home/mo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  9.0.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "create-a-wallet",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: read ECONNRESET
+      at _errnoException (util.js:1031:13)
+      at TLSWrap.onread (net.js:619:25)
