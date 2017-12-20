@@ -1,3 +1,8 @@
+import Address from "../components/Address";
+
 export default () => (
-    <div>Create A Wallet</div>
+    <div>
+      <div>Create A Wallet</div>
+      <Address/>
+    </div>
 )
