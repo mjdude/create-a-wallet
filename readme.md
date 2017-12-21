@@ -17,6 +17,12 @@ store any wallet data
 You can run this by:
 * Clone repo 
 * Install dependencies (via npm or yarn)
+* Create .env file with environment varialbes
+* npm start
+
+## Additional Features
+Section for aditional features
+* Add send to email option
 
 # Contact
 Message me on twitter @majdude
