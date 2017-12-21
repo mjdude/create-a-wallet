@@ -1,8 +1,24 @@
+import React, { Component } from "react";
+import CryptoSelector from "../components/CryptoSelector";
 import Address from "../components/Address";
 
-export default () => (
-    <div>
-      <div>Create A Wallet</div>
-      <Address/>
-    </div>
-)
+export default class extends Component {
+  state = { crypto: null };
+
+  handleSelection(crypto) {
+    console.log(`selecting ${crypto}`);
+    this.state.crypto ? crypto = null : null;
+    this.setState(() => ({crypto}));
+  }
+
+  render() {
+    console.log("crypto state is" , this.state.crypto);
+    return (
+      <div>
+        <div>Create A Wallet</div>
+        <CryptoSelector handleSelection={this.handleSelection.bind(this)} />
+        {this.state.crypto ? <Address /> : null}
+      </div>
+    );
+  }
+}
