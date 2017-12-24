@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CryptoSelector from "../components/CryptoSelector";
 import Address from "../components/Address";
+import WalletQuestion from "../components/WalletQuestion";
 import {getEthWallet} from "../libs/createWallet";
 
 export default class extends Component {
@@ -18,6 +19,7 @@ export default class extends Component {
       <div>
         <div>Select a currency and a wallet will be created</div>
         <CryptoSelector handleSelection={this.handleSelection.bind(this)} />
+        <WalletQuestion />
         {this.state.crypto ? <Address /> : null}
       </div>
     );
