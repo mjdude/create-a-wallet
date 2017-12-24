@@ -3,9 +3,10 @@ Create a wallet is an app that generates a crypto wallet with a click of a butto
 
 ## User Journey
 * Select crypto type
-* Click generate wallet
+* Enter passphrase
+* Download key file
 * Wallet is generated and address is displayed
-* Public and private key are generated and can can be downloaded
+* Give option to saev address / print
 
 ## Architecture Overview
 * Server side rendered webapp written in react
