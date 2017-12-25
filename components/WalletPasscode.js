@@ -1,5 +1,5 @@
 export default class extends React.Component {
-  state = { passcode: null };
+  state = { passcode: `` };
 
   handleInput(event) {
     const passcode = event.target.value;
@@ -9,7 +9,7 @@ export default class extends React.Component {
   render() {
     return (
       <div>
-        <input onChange={this.handleInput.bind(this)} type="text" />
+        <input onChange={this.handleInput.bind(this)} type="text"/>
         <button onClick={() => this.props.handlePasscode(this.state.passcode)}>
           Set Passcode
         </button>
