@@ -14,6 +14,7 @@ export default class extends Component {
   }
 
   handlePasscode(passcode){
+    console.log(`Passcode is ${passcode}`);
     this.setState(() => ({passcode}));
   }
 
@@ -23,8 +24,8 @@ export default class extends Component {
       <div>
         <div>Select a currency and a wallet will be created</div>
         <CryptoSelector handleSelection={this.handleSelection.bind(this)} />
-        {this.state.passcode ? <WalletPasscode handlePasscode={this.handlePasscode.bind(this)}/> : null}
-        {this.state.crypto ? <Address /> : null}
+        {this.state.crypto ? <WalletPasscode handlePasscode={this.handlePasscode.bind(this)}/> : null }
+        {this.state.passcode ? <Address /> : null}
       </div>
     );
   }
