@@ -19,17 +19,22 @@ export default class extends Component {
     this.setState(() => ({ passcode }));
   }
 
+  // WIP creating resuable function to set top level state
+  // handleInput(name) {
+  //   this.setState(() => ({name}))
+  // }
+
   render() {
     console.log("crypto state is", this.state.crypto);
     return (
       <div>
-        <div>Select a currency and a wallet will be created</div>
+        <div>Select a currency</div>
         <CryptoSelector handleSelection={this.handleSelection.bind(this)} />
         {this.state.crypto ? (
           <WalletPasscode handlePasscode={this.handlePasscode.bind(this)} />
         ) : null}
         {this.state.passcode ? (
-          <div>
+          <div> Below are you wallet details
             <WalletKey />
             <Address />
           </div>
